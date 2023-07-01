@@ -31,7 +31,7 @@ const Recordar: React.FC<RecordarProps> = (props) => {
     return (
         <div className='Formulario_Recording '>
             <h3>Olvidé mi contraseña</h3>
-            <p>Se le enviarán instrucciones al correo electrónico</p>
+            <p>Se enviarán instrucciones al correo electrónico</p>
             <Formik
                 initialValues={{
                     correoElectronico: ''
