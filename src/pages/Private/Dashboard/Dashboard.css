@@ -1,0 +1,17 @@
+.Dashboard {
+    display: flex;
+}
+
+.Siderbar {
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.Contenido {
+    width: 85%;
+    margin-left: 15%;
+}
+

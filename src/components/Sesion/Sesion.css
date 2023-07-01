@@ -1,0 +1,180 @@
+.Iniciar {
+    width: 100vw;
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Iniciar.active {
+    display: block;
+}
+
+body.active {
+    overflow: hidden;
+    overflow-x: hidden
+}
+
+.Iniciar_Contenido {
+    display: flex;
+}
+
+.Iniciar_bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(33, 50, 91, .25);
+    position: relative;
+}
+
+.Iniciar_Login {
+    width: 28%;
+    height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Iniciar_Login img {
+    width: 200px;
+    margin-left: 25%;
+}
+
+.Iniciar_Login_Cerrar {
+    width: 50px;
+    height: 40px;
+    background-color: #00000045;
+    color: aliceblue;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Formulario_Registrarse, .Formulario_Login , .Formulario_Recording{
+    margin-top: 20%;
+}
+
+.Formulario_Registrarse h3,
+.Formulario_Registrarse p, 
+.Formulario_Login h3,
+.Formulario_Login p ,
+.Formulario_Recording h3,
+.Formulario_Recording p{
+    text-align: center;
+}
+
+.Formulario_Registrarse p, .Formulario_Login p, .Formulario_Recording P {
+    margin-top: -10px;
+    color: var(--bs-gray-700);
+}
+
+
+.Formulario_Registrarse_Input {
+    padding: 10px 5%;
+}
+
+.Formulario_Registrarse_Input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.Formulario_Registrarse_Input input {
+    width: 100%;
+    border: solid 0.8px rgba(0, 0, 0, 0.09);
+    outline: none;
+    height: 40px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    font-size: 1em;
+
+}
+
+.Formulario_Registrarse_Input input::placeholder {
+    color: var(--bs-gray-600);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.Formulario_Registrarse_Input .Input_Border_Red {
+    border: solid 0.8px var(--bs-red);
+}
+
+.error {
+    color: var(--bs-red);
+    font-size: 0.9em;
+}
+
+.Formulario_Registrarse_p {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.Formulario_Login .Formulario_Registrarse_p {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.Formulario_Registrarse_p span {
+    color: var(--bs-blue);
+    cursor: pointer;
+}
+
+.Formulario_Registrarse_Yacuenta {
+    border-top: solid 1px var(--bs-gray-300);
+    margin-top: 20px;
+}
+
+.Formulario_Registrarse_Yacuenta p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.Formulario_Registrarse_Yacuenta span {
+    color: var(--bs-blue);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.mensaje {
+    color: #ed4c78;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+
+
+/* ========= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+
+@media screen and (max-width: 1024px) {}
+
+/* ========= MEDIA QUERIES (SMALL DEVICES) =======*/
+
+@media screen and (max-width: 600px) {
+
+    .Iniciar_Contenido {
+        display: block;
+    }
+
+    .Iniciar_bg {
+        display: none;
+    }
+
+    .Iniciar_Login {
+        width: 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+}

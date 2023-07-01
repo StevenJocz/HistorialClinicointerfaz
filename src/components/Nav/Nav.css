@@ -1,0 +1,222 @@
+.Sidebar {
+    width: 100% !important;
+    float: left;
+    height: 100vh;
+    background-color: var(--bg-siderbar);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+
+}
+
+.Sidebar.active {
+    display: none;
+}
+
+
+.Sidebar_Logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sidebar_Logo h1 {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.Sidebar_Menu {
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 100px !important;
+}
+
+
+.Sidebar_Menu_Titulo {
+    font-size: 0.7em;
+    display: block;
+    padding-left: 10px;
+    line-height: 50px;
+    white-space: normal;
+    font-size: 0.8em;
+    color: rgb(110, 110, 110);
+    font-weight: 400;
+}
+
+.Sidebar_Menu_Titulo.active {
+    display: none;
+}
+
+.Permisos .Permisos_List {
+    position: relative;
+    list-style: none;
+    width: 98%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.Permisos .Permisos_List.active {
+    background-color: var(--bg-body);
+}
+
+.Permisos .Permisos_List b:nth-child(1) {
+    position: absolute;
+    top: -10px;
+    height: 10px;
+    width: 100%;
+    background-color: var(--bg-body);
+    display: none;
+}
+
+.Permisos .Permisos_List b:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 50px;
+    background-color: var(--bg-siderbar);
+}
+
+.Permisos .Permisos_List b:nth-child(2) {
+    position: absolute;
+    bottom: -10px;
+    height: 10px;
+    width: 100%;
+    background-color: var(--bg-body);
+    display: none;
+}
+
+.Permisos .Permisos_List b:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 40px;
+    background-color: var(--bg-siderbar);
+}
+
+.Permisos .Permisos_List.active b:nth-child(1),
+.Permisos .Permisos_List.active b:nth-child(2) {
+    display: block;
+}
+
+.Permisos .Permisos_List a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #919191 !important;
+}
+
+
+.Permisos .Permisos_List a .icon {
+    position: relative;
+    min-width: 30px;
+    height: 30px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: var(--bg-siderbar);
+    color: #d6d6d6;
+}
+
+.Permisos .Permisos_List a:hover .icon {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.Permisos .Permisos_List a .icon.active {
+    background-color: var(--bg-siderbar);
+    color: #919191;
+}
+
+.Permisos .Permisos_List a .icon {
+    font-size: 1em;
+}
+
+.Permisos .Permisos_List a:hover .icon.active {
+    font-size: 1em;
+}
+
+.Permisos_List_Title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    white-space: normal;
+    font-size: 0.9em;
+}
+
+.Permisos_List.active a .Permisos_List_Title{
+    color: #000000;
+}
+
+
+.Permisos_List a:hover .Permisos_List_Title{
+    margin-left: 5px;
+    color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+.Permisos_List.active a:hover .Permisos_List_Title{
+    margin-left: 5px;
+    color: #000000;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+
+
+
+
+
+/* ========= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+
+@media screen and (max-width: 1024px) {}
+
+/* ========= MEDIA QUERIES (SMALL DEVICES) =======*/
+
+@media screen and (max-width: 600px) {
+    .Sidebar {
+        width: 0% !important;
+    }
+
+    .Sidebar.active {
+        width: 60% !important;
+    }
+
+}
