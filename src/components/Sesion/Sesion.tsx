@@ -27,7 +27,7 @@ const Sesion = () => {
     return (
         <div className='Iniciar'>
             <div className='Iniciar_Contenido'>
-                <div className='Iniciar_bg' onClick={handleCerrar}></div>
+                <div className='Iniciar_bg'></div>
                 <div className='Iniciar_Login'>
                     <div className='Iniciar_Login_Cerrar' onClick={handleCerrar}>
                         <p>X</p>

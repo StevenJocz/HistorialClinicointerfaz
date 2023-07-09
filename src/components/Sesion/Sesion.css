@@ -62,6 +62,12 @@ body.active {
     margin-top: 20%;
 }
 
+.Formulario_Login .iconoLogin, .Formulario_Recording  .iconoLogin{
+    text-align: center;
+    font-size: 3em;
+    color: var(--bs-blue);
+}
+
 .Formulario_Registrarse h3,
 .Formulario_Registrarse p, 
 .Formulario_Login h3,
@@ -70,6 +76,8 @@ body.active {
 .Formulario_Recording p{
     text-align: center;
 }
+
+
 
 .Formulario_Registrarse p, .Formulario_Login p, .Formulario_Recording P {
     margin-top: -10px;
@@ -154,6 +162,17 @@ body.active {
     margin-top: 1em;
 }
 
+.mensajeCambio {
+    color: #2daa89;
+    font-size: 1.4em;
+    margin-top: 40px;
+}
+
+.Formulario_Recording  .color_IconoLogin{
+    text-align: center;
+    font-size: 3em;
+    color: #2daa89;
+}
 
 
 /* ========= MEDIA QUERIES (MEDIUM DEVICES) =======*/

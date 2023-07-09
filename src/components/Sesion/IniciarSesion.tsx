@@ -7,6 +7,7 @@ import { getIniciar } from '../../services';
 import { clearLocalStorage } from '../../utilities';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { BotonSubmit } from '../BotonSubmit';
+import { IonIcon } from '@ionic/react';
 
 interface LoginFormValues {
   correoElectronico: string;
@@ -52,6 +53,9 @@ const IniciarSesion: React.FC<IniciarProps> = (props) => {
 
   return (
     <div className='Formulario_Login'>
+      <div className='iconoLogin'>
+        <IonIcon name="person-outline"/>
+      </div>
       <h3>Inicie sesión</h3>
       <p>Por favor ingrese sus credenciales para acceder</p>
       <Formik
