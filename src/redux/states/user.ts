@@ -18,6 +18,7 @@ export const userSlice = createSlice({
             persistLocalStorage<UserInfo>(UserKey, action.payload);
             console.log(action.payload)
             return action.payload;
+            state;
         },
         updateUser: (state, action) => {
             const result = { ...state, ...action.payload };

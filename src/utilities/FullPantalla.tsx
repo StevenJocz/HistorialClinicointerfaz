@@ -33,6 +33,8 @@ const FullscreenButton: React.FC = () => {
         };
     }, []);
 
+    { isFullscreen }
+
     // Renderiza un icono que al hacer clic, alternará entre el modo de pantalla completa y el modo normal
     return (
         <IonIcon icon={scanOutline} onClick={toggleFullscreen} />
