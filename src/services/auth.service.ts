@@ -52,7 +52,7 @@ export const PostActualizarPassword = (userEmail: string, nuevoPassword: string)
     const url = `${baseUrl}Login/ActualizarPassword?userEmail=${encodeURIComponent(userEmail)}&nuevoPassword=${encodeURIComponent(nuevoPassword)}`;
 
     return fetch(url, {
-        method: 'POST',
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         }

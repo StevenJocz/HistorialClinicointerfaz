@@ -3,5 +3,48 @@
     height: 70px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    margin-top: -20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav_perfil {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.nav_perfil h2 {
+    font-size: 1em;
+    color: var(--bs-primary);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav_perfil img.ImgPerfil {
+    width: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    cursor: pointer;
+}
+
+.nav_perfil ion-icon {
+    font-size: 1.5em;
+    margin-right: 20PX;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav_perfil ion-icon:hover {
+    background-color: rgb(231, 234, 234);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+
 }

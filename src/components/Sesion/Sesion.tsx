@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import IniciarSesion from './IniciarSesion';
 import Recordar from './Recordarme';
+import Registro from './Registro';
 import './Sesion.css';
+
 
 enum ComponenteActual {
     IniciarSesion = 'IniciarSesion',
-    Recordar = 'Recordar'
+    Recordar = 'Recordar',
+    Registro = 'Registro',
+
 }
 
 const Sesion = () => {
@@ -13,6 +17,10 @@ const Sesion = () => {
 
     const mostrarRecordar = () => {
         setComponenteActual(ComponenteActual.Recordar);
+    };
+
+    const mostrarRegistro = () => {
+        setComponenteActual(ComponenteActual.Registro);
     };
 
     const handleCerrar = () => {
@@ -34,10 +42,13 @@ const Sesion = () => {
                     </div>
                     <div>
                         {componenteActual === ComponenteActual.IniciarSesion && (
-                            <IniciarSesion  mostrarRecordar={mostrarRecordar} />
+                            <IniciarSesion mostrarRecordar={mostrarRecordar} mostrarRegistro={mostrarRegistro}/>
                         )}
                         {componenteActual === ComponenteActual.Recordar && (
                             <Recordar mostrarIniciarSesion={() => setComponenteActual(ComponenteActual.IniciarSesion)} />
+                        )}
+                        {componenteActual === ComponenteActual.Registro && (
+                            <Registro mostrarIniciarSesion={() => setComponenteActual(ComponenteActual.IniciarSesion)} />
                         )}
                     </div>
                 </div>

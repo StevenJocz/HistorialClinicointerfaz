@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { PostEnviarCodigo } from '../../services';
 import { BotonSubmit } from '../BotonSubmit';
 import { IonIcon } from '@ionic/react';
+import { mailUnreadOutline} from 'ionicons/icons';
 import CambioPassword  from './CambioPassword';
 import './Sesion.css';
 
@@ -44,7 +45,7 @@ const Codigo: React.FC<CodigoProps> = ({ correoElectronico }) => {
             {!mostrarCambioPassword ? (
                 <>
                     <div className='iconoLogin'>
-                        <IonIcon name="mail-unread-outline" />
+                    <IonIcon icon={mailUnreadOutline}/>
                     </div>
                     <h3>¡Correo electrónico enviado!</h3>
                     <p>Por favor, revisa tu bandeja de entrada y sigue las instrucciones proporcionadas en el correo electrónico para completar el proceso.</p>

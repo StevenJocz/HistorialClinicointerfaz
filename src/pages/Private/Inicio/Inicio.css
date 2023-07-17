@@ -1,0 +1,105 @@
+.Inicio i {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.Inicio i span {
+    font-size: 1.3em;
+    color: rgb(25, 119, 202);
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.Inicio_Contenedor {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Inicio_Contenedor_div {
+    width: 25%;
+    background-color: #e0eafc;
+    color: #3f80ea;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.Inicio_Contenedor_div h4 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.Inicio_Contenedor_div p {
+    text-align: center;
+    color: #000;
+}
+
+.Inicio_Contenedor_div img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+}
+
+.Inicio_Contenedor_opcion {
+    width: 75%;
+    
+}
+
+.Inicio_Contenedor_opcion_Menu {
+    width: 98%;
+    background-color: #fff ;
+    box-shadow: 0 0 0.875rem 0 rgba(41,48,66,.05);
+    margin-bottom: 24px;
+    margin-left: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -ms-transition: ease-in 0.1s;
+    -o-transition: ease-in 0.1s;
+}
+
+.Inicio_Contenedor_opcion_Menu:hover {
+    background-color: #b1c9f951;
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+
+.Inicio_Contenedor_opcion_Menu:hover .opcion_Menu_Icono{
+    color: #ffffff;
+}
+
+.opcion_Menu_Icono {
+    font-size: 5.5em;
+    color: #8fb1e9;
+    margin-right: 20px;
+    border-right: #9fc4ff9e solid 1px;
+    padding-right: 10px;
+}
+
+.Inicio_Contenedor_opcion_Menu  h4{
+    color: rgb(25, 119, 202);
+}
+
+.Inicio_Contenedor_opcion_Menu  p{
+    margin-top: -10px;
+}
+
+

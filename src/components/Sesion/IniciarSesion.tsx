@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { PublicRoutes } from '../../model';
+import { PrivateRoutes, PublicRoutes } from '../../model';
 import { createUser, resetUser, UserKey } from '../../redux/states/user';
 import { getIniciar } from '../../services';
 import { clearLocalStorage } from '../../utilities';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { BotonSubmit } from '../BotonSubmit';
 import { IonIcon } from '@ionic/react';
+import { personOutline } from 'ionicons/icons';
 
 interface LoginFormValues {
   correoElectronico: string;
@@ -16,6 +17,7 @@ interface LoginFormValues {
 
 interface IniciarProps {
   mostrarRecordar: () => void;
+  mostrarRegistro: () => void;
 }
 
 const IniciarSesion: React.FC<IniciarProps> = (props) => {
@@ -42,7 +44,7 @@ const IniciarSesion: React.FC<IniciarProps> = (props) => {
       } else {
         setMsg('');
         dispatch(createUser({ ...result }));
-        navigate(`/private/Dashboard`, { replace: true });
+        navigate(`${PrivateRoutes.PRIVATE}/${PrivateRoutes.DASHBOARD}`, { replace: true });
       }
       setIsLoading(false);
     } catch (error) {
@@ -54,7 +56,7 @@ const IniciarSesion: React.FC<IniciarProps> = (props) => {
   return (
     <div className='Formulario_Login'>
       <div className='iconoLogin'>
-        <IonIcon name="person-outline"/>
+        <IonIcon icon={personOutline} />
       </div>
       <h3>Inicie sesión</h3>
       <p>Por favor ingrese sus credenciales para acceder</p>
@@ -66,13 +68,13 @@ const IniciarSesion: React.FC<IniciarProps> = (props) => {
         validate={(valor) => {
           let errors: any = {};
           if (!valor.correoElectronico) {
-            errors.correoElectronico = 'Campo requerido';
+            errors.correoElectronico = 'Introduce una dirección de correo electrónico válida.';
           } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(valor.correoElectronico)) {
-            errors.correoElectronico = 'Correo electrónico inválido';
+            errors.correoElectronico = 'Introduce una dirección de correo electrónico válida.';
           }
 
           if (!valor.password) {
-            errors.password = 'Campo requerido';
+            errors.password = 'Introduzca una contraseña válida.';
           }
           setMsg('');
           return errors;
@@ -100,17 +102,25 @@ const IniciarSesion: React.FC<IniciarProps> = (props) => {
                 className={errors.password ? 'Input_Border_Red' : ''}
               />
               <ErrorMessage name='password' component={() => <div className='error'>{errors.password}</div>} />
+              <div className='Formulario_Registrarse_p'>
+                <p onClick={props.mostrarRecordar}>
+                  <span>¿Olvidó su contraseña?</span>
+                </p>
+              </div>
             </div>
-            <div className='Formulario_Registrarse_p'>
-              <p onClick={props.mostrarRecordar}>
-                <span>¿Olvidó su contraseña?</span>
-              </p>
-            </div>
+
             <i className='mensaje'>{msg}</i>
             <BotonSubmit texto={'Inicia sesión'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => login} />
           </Form>
+
         )}
       </Formik>
+      <div className='Formulario_Registrarse_Cuenta'>
+        <p onClick={props.mostrarRegistro}>
+          ¿Aún no tienes una cuenta?
+          <span>Únete</span>
+        </p>
+      </div>
     </div>
   );
 };

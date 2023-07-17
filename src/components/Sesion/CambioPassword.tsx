@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { PostActualizarPassword } from '../../services';
 import { BotonSubmit } from '../BotonSubmit';
 import { IonIcon } from '@ionic/react';
+import { lockClosedOutline, checkmarkCircleOutline} from 'ionicons/icons';
 import './Sesion.css';
 
 interface CodigoProps {
@@ -41,13 +42,13 @@ const CambioPassword: React.FC<CodigoProps> = ({ correoElectronico }) => {
     return (
         <div className='Formulario_Recording'>
             <div className='iconoLogin'>
-                <IonIcon name="lock-closed-outline" />
+                <IonIcon icon={lockClosedOutline}/>
             </div>
             <h3>Cambio de contraseña</h3>
             {cambioCorrecto ? (
                 <>
                     <div className=' color_IconoLogin'>
-                        <IonIcon name="checkmark-circle-outline" />
+                        <IonIcon icon={checkmarkCircleOutline}/>
                     </div>
                     <i className='mensajeCambio'>{msg}</i>
                 </>

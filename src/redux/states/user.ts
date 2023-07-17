@@ -3,8 +3,9 @@ import { UserInfo } from '../../model';
 import { clearLocalStorage, persistLocalStorage } from '../../utilities';
 
 export const EmptyUserState: UserInfo = {
-
     token: '',
+    userEmail: '',
+    user_name: '',
 };
 
 export const UserKey = 'user';
@@ -15,6 +16,7 @@ export const userSlice = createSlice({
     reducers: {
         createUser: (state, action) => {
             persistLocalStorage<UserInfo>(UserKey, action.payload);
+            console.log(action.payload)
             return action.payload;
         },
         updateUser: (state, action) => {

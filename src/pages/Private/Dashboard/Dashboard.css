@@ -3,15 +3,41 @@
 }
 
 .Siderbar {
-    width: 15%;
+    width: 18%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    background-color: var(--bg-siderbar);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    overflow: hidden;
+    overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.Siderbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.Siderbar::-webkit-scrollbar-thumb {
+	background-color: var(--bg-body);
+}
+
+.Siderbar::-webkit-scrollbar-track {
+    background-color: var(--bg-body);
 }
 
 .Contenido {
-    width: 85%;
-    margin-left: 15%;
+    width: 82%;
+    margin-left: 18%;
+    overflow: hidden;
 }
 
+.Formularios {
+    width: 95%;
+    padding: 2em;
+}

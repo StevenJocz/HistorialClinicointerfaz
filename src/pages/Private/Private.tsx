@@ -9,7 +9,7 @@ function Private() {
     return (
         <RoutesWithNotFound>
             <Route path="/" element={<Navigate to={PrivateRoutes.DASHBOARD} />} />
-            <Route path={PrivateRoutes.DASHBOARD} element={<Dashboard />} />
+            <Route path={`${PrivateRoutes.DASHBOARD}/*`} element={<Dashboard />} />
         </RoutesWithNotFound>
     );
 }

@@ -4,6 +4,7 @@ import { PostRecordarme } from '../../services';
 import { BotonSubmit } from '../BotonSubmit';
 import Codigo from './Codigo';
 import { IonIcon } from '@ionic/react';
+import { mailOutline, chevronBack} from 'ionicons/icons';
 import './Sesion.css';
 
 interface RecordarProps {
@@ -45,7 +46,7 @@ const Recordar: React.FC<RecordarProps> = (props) => {
             {!mostrarCodigo ? (
                 <>
                     <div className='iconoLogin'>
-                        <IonIcon name="mail-outline" />
+                        <IonIcon icon={mailOutline}/>
                     </div>
 
                     <h3>Olvidé mi contraseña</h3>
@@ -57,9 +58,9 @@ const Recordar: React.FC<RecordarProps> = (props) => {
                         validate={(valor_remember) => {
                             let errors: any = {};
                             if (!valor_remember.correoElectronico) {
-                                errors.correoElectronico = 'Campo requerido';
+                                errors.correoElectronico = 'Introduce una dirección de correo electrónico válida.';
                             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(valor_remember.correoElectronico)) {
-                                errors.correoElectronico = 'Correo electrónico inválido';
+                                errors.correoElectronico = 'Introduce una dirección de correo electrónico válida.';
                             }
                             return errors;
                         }}
@@ -90,7 +91,7 @@ const Recordar: React.FC<RecordarProps> = (props) => {
             )}
             <div className='Formulario_Registrarse_Yacuenta'>
                 <p onClick={props.mostrarIniciarSesion}>
-                    <span>Volver a Iniciar sesión</span>
+                <IonIcon icon={chevronBack}/> <span>Volver a Iniciar sesión</span>
                 </p>
             </div>
         </div>
