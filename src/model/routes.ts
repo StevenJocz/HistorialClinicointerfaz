@@ -1,5 +1,5 @@
 export const PublicRoutes = {
-    HOME:''
+    HOME:'HistorialClinicointerfaz'
 }
 
 export const PrivateRoutes = {
