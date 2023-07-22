@@ -47,8 +47,8 @@ body.active {
 }
 
 .Iniciar_Login_Cerrar {
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     background-color: #00000045;
     color: aliceblue;
     float: right;
@@ -64,7 +64,7 @@ body.active {
 
 .Formulario_Login .iconoLogin, .Formulario_Recording  .iconoLogin{
     text-align: center;
-    font-size: 3em;
+    font-size: 2.7em;
     color: var(--bs-blue);
 }
 
@@ -77,8 +77,6 @@ body.active {
     text-align: center;
 }
 
-
-
 .Formulario_Registrarse p, .Formulario_Login p, .Formulario_Recording P {
     margin-top: -10px;
     color: var(--bs-gray-700);
@@ -86,7 +84,7 @@ body.active {
 
 
 .Formulario_Registrarse_Input {
-    padding: 10px 5%;
+    padding: 8px 3%;
     position: relative;
 }
 
@@ -99,7 +97,7 @@ body.active {
     width: 100%;
     border: solid 0.8px rgba(0, 0, 0, 0.09);
     outline: none;
-    height: 40px;
+    height: 30px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -109,6 +107,11 @@ body.active {
     padding-left: 10px;
     font-size: 1em;
 
+}
+
+.Formulario_Registrarse_Input input::placeholder {
+    color: #b4b4b4; 
+    font-style: italic;
 }
 
 .Formulario_Registrarse_Input select option:hover {
@@ -128,16 +131,16 @@ body.active {
 
 .error {
     color: var(--bs-red);
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .Formulario_Registrarse_p {
     margin-top: 20px;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .Formulario_Login .Formulario_Registrarse_p {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 600;
     position: absolute;
     top: 0;
@@ -156,7 +159,7 @@ body.active {
 
 .Formulario_Registrarse_Yacuenta p {
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 0.9em;
     position: relative;
 }
 
@@ -166,7 +169,7 @@ body.active {
     font-weight: 700;
 }
 .Formulario_Registrarse_Yacuenta  ion-icon{
-    font-size: 1.3em;
+    font-size: 1.2em;
     position: absolute;
     top: 0%;
     left: 24%;
@@ -180,7 +183,7 @@ body.active {
 
 .Formulario_Registrarse_Cuenta p {
     margin-top: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .Formulario_Registrarse_Cuenta span {

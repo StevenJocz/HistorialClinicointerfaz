@@ -110,7 +110,7 @@ const IniciarSesion: React.FC<IniciarProps> = (props) => {
             </div>
 
             <i className='mensaje'>{msg}</i>
-            <BotonSubmit texto={'Inicia sesión'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => login} />
+            <BotonSubmit texto={'Inicia sesión'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => login} color="guardar" />
           </Form>
 
         )}

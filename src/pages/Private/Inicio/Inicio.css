@@ -1,105 +1,140 @@
-.Inicio i {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
 
-.Inicio i span {
-    font-size: 1.3em;
-    color: rgb(25, 119, 202);
-    margin: 0 5px;
-    font-weight: 600;
-}
 
 .Inicio_Contenedor {
-    display: flex;
     width: 100%;
     margin-top: 20px;
 }
 
 .Inicio_Contenedor_div {
-    width: 25%;
-    background-color: #e0eafc;
+    width: 98%;
+    height: 150px;
+    background-color: var(--bs-purple);
     color: #3f80ea;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
     padding: 10px;
-    overflow: hidden;
+    display: flex;
+    position: relative;
 }
 
 .Inicio_Contenedor_div h4 {
-    text-align: center;
     font-size: 1.5em;
+    color: #fff;
 }
 
 .Inicio_Contenedor_div p {
-    text-align: center;
-    color: #000;
+    color: #dedede;
+    margin-top: -20px;
+
 }
 
 .Inicio_Contenedor_div img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 200px;
     transform: scaleX(-1);
+    margin-top: -28px;
 }
 
-.Inicio_Contenedor_opcion {
-    width: 75%;
-    
-}
-
-.Inicio_Contenedor_opcion_Menu {
-    width: 98%;
-    background-color: #fff ;
-    box-shadow: 0 0 0.875rem 0 rgba(41,48,66,.05);
-    margin-bottom: 24px;
-    margin-left: 20px;
+.Inicio_Contenedor_div button {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    color: var(--bs-purple);
+    background-color: var(--bs-white);
+    border: none;
+    padding: 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 10px;
-    display: flex;
     cursor: pointer;
-    transition: ease-in 0.1s;
-    -webkit-transition: ease-in 0.1s;
-    -moz-transition: ease-in 0.1s;
-    -ms-transition: ease-in 0.1s;
-    -o-transition: ease-in 0.1s;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.Inicio_Contenedor_div button:hover {
+    color: var(--bs-blue);
+}
+
+.Inicio_Contenedor_opcion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    
+
+}
+
+.Inicio_Contenedor_opcion_Menu {
+    width: 22%;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: -7.829px 11.607px 20px 0px #e4e3f5;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #e8e8f7;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
 }
 
 .Inicio_Contenedor_opcion_Menu:hover {
-    background-color: #b1c9f951;
-    transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
 }
 
-.Inicio_Contenedor_opcion_Menu:hover .opcion_Menu_Icono{
+.Inicio_Contenedor_opcion_Menu:hover .opcion_Menu_Icono {
     color: #ffffff;
 }
 
+.opcion_Menu_Contenedor {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 60%;
+    right: 3%;
+    border-radius: 50%;
+    background-color: var(--bs-purple);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .opcion_Menu_Icono {
-    font-size: 5.5em;
-    color: #8fb1e9;
-    margin-right: 20px;
-    border-right: #9fc4ff9e solid 1px;
-    padding-right: 10px;
+    font-size: 2em;
+    color: #fcfcfc;
+    margin-top: 25%;
 }
 
-.Inicio_Contenedor_opcion_Menu  h4{
-    color: rgb(25, 119, 202);
+.Inicio_Contenedor_opcion_Menu h4 {
+    color: rgb(0, 0, 0);
 }
 
-.Inicio_Contenedor_opcion_Menu  p{
+.Inicio_Contenedor_opcion_Menu p {
     margin-top: -10px;
+    color: #959595;
 }
-
-

@@ -28,13 +28,13 @@
 }
 
 .Header_Contenido h1:nth-child(1) {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #000000;
     font-weight: 600;
 }
 
 .Header_Contenido .Typewriter {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: #377dff;
     font-weight: 600;
     margin-top: -40px;
@@ -43,7 +43,7 @@
 .Header_Contenido p {
     color: var(--bs-gray-700);
     font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -64,7 +64,7 @@
     -o-border-radius: 10px;
     cursor: pointer;
     width: 100px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     display: flex;

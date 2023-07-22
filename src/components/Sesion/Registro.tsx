@@ -218,7 +218,7 @@ const Registro: React.FC<RegistroProps> = (props) => {
                                 </div>
 
                                 <i className='mensaje'>{msg}</i>
-                                <BotonSubmit texto={'Registrarme'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleRegistrarUser} />
+                                <BotonSubmit texto={'Registrarme'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleRegistrarUser} color="guardar"/>
                             </Form>
                         )}
                     </Formik>

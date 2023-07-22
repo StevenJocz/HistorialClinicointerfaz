@@ -5,7 +5,7 @@
     --bs-blue: #377dff;
     --bs-blue-hover: #2d67d2;
     --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
+    --bs-purple: #6259ca;
     --bs-pink: #d63384;
     --bs-red: #ed4c78;
     --bs-orange: #fd7e14;
@@ -39,7 +39,8 @@
     --bs-body-color: #566472;
     --bs-highlight-bg: #e6e6e643;
     --bg-siderbar: #191a2a;
-    --bg-body: #F1F2FF;
+    --bg-body: #eaedf7;
+    --primary01: rgba(98, 89, 202, 0.1);
 
 
 }
@@ -50,6 +51,8 @@ body {
     padding: 0;
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-body);
+    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -64,4 +67,28 @@ a:hover {
 ::selection {
     color: #377dff;
     background-color: rgba(55, 125, 255, .1);
+}
+
+.columna-2 {
+    flex: 0 0 10%;
+    max-width: 10%;
+    margin: 10px;
+}
+
+.columna-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin: 10px;
+}
+
+.columna-6 {
+    flex: 0 0 44.5%;
+    max-width: 44.5%;
+    margin: 10px;
+}
+
+.columna-12 {
+    flex: 0 0 93%;
+    max-width: 93%;
+    margin: 10px;
 }

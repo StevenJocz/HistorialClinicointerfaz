@@ -76,7 +76,7 @@ const Codigo: React.FC<CodigoProps> = ({ correoElectronico }) => {
                                     <ErrorMessage name='codigo' component={() => <div className='error'>{errors.codigo}</div>} />
                                 </div>
                                 <i className='mensaje'>{msg}</i>
-                                <BotonSubmit texto='Enviar Código' isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleEnviarCodigo} />
+                                <BotonSubmit texto='Enviar Código' isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleEnviarCodigo} color="guardar"/>
                             </Form>
                         )}
                     </Formik>

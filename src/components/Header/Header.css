@@ -3,7 +3,6 @@
     height: 70px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-
     display: flex;
     justify-content: space-between;
 }

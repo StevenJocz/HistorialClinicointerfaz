@@ -1,0 +1,84 @@
+.Formulario_Header {
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Formulario_Headero_Ubicacion h1 {
+    font-size: 24px;
+}
+
+.Formulario_Headero_Ubicacion p {
+    margin-top: -10px;
+}
+
+.Formulario_Row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.Formulario_Contendedor{
+    border-radius: 11px;
+    border: 1px solid #e8e8f7;
+    background-color: #fff;
+    box-shadow: -7.829px 11.607px 20px 0px #e4e3f5;
+    padding: 20px;
+}
+
+.Formulario_Contendedor h2 {
+    font-size: 18px;
+}
+
+.Formulario_Contendedor p {
+    font-size: 16px;
+    margin-top: -5px;
+    color: #8f8fb1;
+}
+
+.Formulario_Contendedor_Input {
+    margin-top: 10px;
+}
+
+.Formulario_Contendedor_Input label {
+    display: block;
+    color: #212121;
+    font-weight: 500;
+    font-style: inherit;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.Formulario_Contendedor_Input input, .Formulario_Contendedor_Input select {
+    width: 100%;
+    border: solid 0.8px rgba(0, 0, 0, 0.09);
+    outline: none;
+    height: 40px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+
+.Formulario_Contendedor_Input input::placeholder {
+    color: #b4b4b4; 
+    font-style: italic; 
+}
+
+.Formulario_Contendedor .Input_Border_Red {
+    border: solid 0.8px var(--bs-red);
+}
+
+.error {
+    color: var(--bs-red);
+    font-size: 0.9em;
+}
+

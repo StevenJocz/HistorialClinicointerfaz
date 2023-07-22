@@ -1,8 +1,7 @@
 .Iniciar_Boton {
     color: var(--bs-white);
-    background-color: var(--bs-blue);
     border: none;
-    padding: 10px;
+    padding: 7px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -10,15 +9,10 @@
     -o-border-radius: 10px;
     cursor: pointer;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     margin-top: 5%;
-}
-
-.Iniciar_Boton:hover {
-    background-color: var(--bs-blue-hover);
-    box-shadow: rgba(28, 77, 150, 0.808) 0px 10px 10px -10px !important;
 }
 
 .Iniciar_spinner{

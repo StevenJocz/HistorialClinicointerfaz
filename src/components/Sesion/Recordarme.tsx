@@ -81,7 +81,7 @@ const Recordar: React.FC<RecordarProps> = (props) => {
                                 </div>
 
                                 <i className='mensaje'>{msg}</i>
-                                <BotonSubmit texto={'Recordarme'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleRecordar} />
+                                <BotonSubmit texto={'Recordarme'} isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleRecordar} color="guardar"/>
                             </Form>
                         )}
                     </Formik>

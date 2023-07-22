@@ -116,7 +116,7 @@ const CambioPassword: React.FC<CodigoProps> = ({ correoElectronico }) => {
                                     />
                                     <ErrorMessage name='passwordCorregido' component={() => <div className='error'>{errors.passwordCorregido}</div>} />
                                 </div>
-                                <BotonSubmit texto='Cambiar contraseña' isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleCambiarPassword} />
+                                <BotonSubmit texto='Cambiar contraseña' isLoading={isLoading} isSubmitting={isSubmitting} onClick={() => handleCambiarPassword} color="guardar" />
                             </Form>
                         )}
                     </Formik>
