@@ -12,7 +12,9 @@ const FormExample: React.FC = () => {
     const handleRegistrarUser = async () => {
         try {
 
-
+            setIsLoading(true)
+            setMsg('true')
+            msg
         } catch (error) {
 
         }
