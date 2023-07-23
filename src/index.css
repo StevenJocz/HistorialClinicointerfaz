@@ -92,3 +92,9 @@ a:hover {
     max-width: 93%;
     margin: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+}
