@@ -97,4 +97,10 @@ a:hover {
     body {
         overflow: auto;
     }
+
+    .columna-2 ,.columna-4 ,.columna-6 , .columna-12{
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 10px;
+    }
 }

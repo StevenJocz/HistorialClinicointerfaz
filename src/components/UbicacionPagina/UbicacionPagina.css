@@ -1,11 +1,6 @@
 .Ubicacion  {
-    font-size: 1em !important;
+    font-size: 0.8em !important;
     margin-bottom: 30px !important;
     color: #8f9cc0 !important;
 }
 
-.Ubicacion span {
-    font-size: 1em !important;
-    color: #8f9cc0 !important;
-    margin: 0 5px !important;
-}

@@ -7,7 +7,7 @@
 }
 
 .Formulario_Headero_Ubicacion h1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .Formulario_Headero_Ubicacion p {
@@ -30,12 +30,12 @@
 }
 
 .Formulario_Contendedor h2 {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .Formulario_Contendedor p {
-    font-size: 16px;
-    margin-top: -5px;
+    font-size: 14px;
+    margin-top: -8px;
     color: #8f8fb1;
 }
 
@@ -45,18 +45,19 @@
 
 .Formulario_Contendedor_Input label {
     display: block;
+    font-size: 15px;
     color: #212121;
     font-weight: 500;
     font-style: inherit;
     margin-bottom: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .Formulario_Contendedor_Input input, .Formulario_Contendedor_Input select {
     width: 100%;
     border: solid 0.8px rgba(0, 0, 0, 0.09);
     outline: none;
-    height: 40px;
+    height: 30px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -67,10 +68,103 @@
     font-size: 1em;
 }
 
+.Formulario_Contendedor_Input textarea {
+    width: 100%;
+    height: 100px;
+    border: solid 0.8px rgba(0, 0, 0, 0.09);
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.Formulario_Contendedor_Input textarea::-webkit-scrollbar {
+    width: 3px;
+}
+
+.Formulario_Contendedor_Input textarea::-webkit-scrollbar-thumb {
+    background-color: var(--bg-body);
+}
+
+.Formulario_Contendedor_Input textarea::-webkit-scrollbar-track {
+    background-color: var(--bs-white);
+}
+
+
 
 .Formulario_Contendedor_Input input::placeholder {
-    color: #b4b4b4; 
-    font-style: italic; 
+    color: #989898; 
+}
+
+.Formulario_Contendedor_Input input:disabled {
+    background-color: var(--bg-body); 
+    cursor: not-allowed;
+}
+
+.Formulario_Contendedor_Check {
+    display: flex;
+    margin: 20px 0;
+}
+
+.Formulario_Contendedor_Check label {
+    margin-top: 5px;
+}
+
+
+.Formulario_Contendedor_Input .Checkbox_Input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+}
+
+.Formulario_Contendedor_Input .Checkbox_Input:hover {
+    background: #9faab7;
+}
+
+.Formulario_Contendedor_Input .Checkbox_Input:checked {
+    background: var(--bs-purple);
+}
+
+.Formulario_Contendedor_Input .Checkbox_Input:checked::before {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 0;
+    content: '✔';
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.Contenedor_Botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contenedor_Botones div{
+    width: 100%;
+    margin: 0 4px;
 }
 
 .Formulario_Contendedor .Input_Border_Red {
@@ -81,4 +175,44 @@
     color: var(--bs-red);
     font-size: 0.9em;
 }
+
+.react-datepicker__header {
+    background-color: #191a2a !important;
+    color: #fff !important;
+}
+
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+    color: #fff !important;
+}
+.react-datepicker__day-names div{
+    color: #fff !important;
+}
+
+.col-4 {
+    flex: 0 0 23%;
+    max-width: 23%;
+    margin: 10px;
+}
+
+.col-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin: 10px;
+}
+
+.col-12 {
+    flex: 0 0 97%;
+    max-width: 97%;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .col-4 , .col-6, .col-12 {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin: 10px;
+    }
+}
+
 

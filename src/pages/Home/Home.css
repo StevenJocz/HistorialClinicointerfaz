@@ -9,6 +9,7 @@
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
     padding-top: 4%;
+    
 }
 
 .Header_Img {
@@ -88,7 +89,6 @@
 
 @media screen and (max-width: 600px) {
     .Header {
-
         display: block;
         height: auto;
         max-width: 100%;

@@ -26,14 +26,15 @@ const Dashboard: React.FC = () => {
         <div className="Formularios">
           <RoutesWithNotFound>
           <Route path="/" element={<Inicio enviarJson={enviarJson} />} />
-            <Route path="/formulariouno" element={<FormExample />} />
-            <Route path="/formulariodos" element={<div>Formulario Dos</div>} />
-            <Route path="/formulariotres" element={<div>Formulario tres</div>} />
-            <Route path="/formulariocuatro" element={<div>Formulario Cuatro</div>} />
-            <Route path="/formulariocinco" element={<div>Formulario Cinco</div>} />
-            <Route path="/formularioseis" element={<div>Formulario Seis</div>} />
+            <Route path="/gestion-del-cuidado/formulariouno" element={<FormExample />} />
+            <Route path="/gestion-del-cuidado/formulariodos" element={<div>Formulario Dos</div>} />
+            <Route path="/gestion-del-cuidado/formulariotres" element={<div>Formulario tres</div>} />
+            <Route path="/gestion-del-servicio/formulariocuatro" element={<div>Formulario Cuatro</div>} />
+            <Route path="/gestion-del-servicio/formulariocinco" element={<div>Formulario Cinco</div>} />
+            <Route path="/gestion-del-servicio/formularioseis" element={<div>Formulario Seis</div>} />
           </RoutesWithNotFound>
         </div>
+        
       </div>
     </div>
   )

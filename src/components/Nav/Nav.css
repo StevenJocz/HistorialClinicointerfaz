@@ -27,7 +27,7 @@
 .Sidebar_Menu {
     top: 75px;
     left: 0;
-    width: 260px;
+    width: 230px;
     height: 100vh;
     padding-left: 5px;
     padding-top: 10px;
@@ -55,7 +55,7 @@
 .Permisos .Permisos_List {
     position: relative;
     list-style: none;
-    width: 260px;
+    width: 230px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-bottom: 20px;
@@ -203,6 +203,7 @@
 .Opcion_Advertencia {
     color: var(--bs-info);
     text-align: center;
+    font-size: 12px;
 }
 
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { IonIcon } from '@ionic/react';
-import { homeOutline} from 'ionicons/icons';
+import { homeOutline } from 'ionicons/icons';
 import { Permiso } from '../../services';
 import ImgSelet from '../../assets/svg/Choose-rafiki.svg'
 import './Nav.css'
@@ -11,18 +11,25 @@ interface NavProps {
 }
 
 const Nav: React.FC<NavProps> = ({ jsonProp }) => {
-    const [activeItem, setActiveItem] = useState<string>('app/dashboard');
+    const [activeItem, setActiveItem] = useState<string>('dashboard');
     const [resultJson, setResultJson] = useState<any[]>([]);
+    const [activeSection, setActiveSection] = useState<string>('');
     const location = useLocation();
 
     useEffect(() => {
-        // Obtener la parte de la URL después de la última barra '/'
-        const currentPath = location.pathname.split('/').pop();
-        setActiveItem(currentPath || '/app/dashboard');
+        const currentPath = location.pathname.split('/app/dashboard/')[1];
+        setActiveItem(currentPath || 'dashboard');
     }, [location]);
 
     useEffect(() => {
-        setResultJson(Permiso(jsonProp));
+        const sections = location.pathname.split('/').filter(Boolean);
+        const activeSectionPath = sections.slice(2, sections.length - 1).join('/');
+        console.log(activeSection)
+        setActiveSection(activeSectionPath);
+    }, [location]);
+    
+    useEffect(() => {
+        setResultJson(Permiso(activeSection === '' ? jsonProp : activeSection));
     }, [jsonProp]);
 
     const handleClick = (item: string) => {
@@ -47,7 +54,7 @@ const Nav: React.FC<NavProps> = ({ jsonProp }) => {
                             </Link>
                         </div>
                     </li>
-                    <h4 className="Sidebar_Menu_Titulo">Formularios {jsonProp}</h4>
+                    <h4 className="Sidebar_Menu_Titulo">Formularios {jsonProp.replace('o', 'ó').replace('-', ' ').replace('-', ' ')}</h4>
                     {resultJson.length === 0 ? (
                         <div>
                             <p className="Opcion_Advertencia">Por favor, selecciona una opción para visualizar los formularios.</p>

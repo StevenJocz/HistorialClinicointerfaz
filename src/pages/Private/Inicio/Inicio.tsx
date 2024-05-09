@@ -34,39 +34,21 @@ const Inicio: React.FC<InicioProps> = ({ enviarJson }) => {
           <button>Cómo funciona</button>
         </div>
         <div className='Inicio_Contenedor_opcion'>
-          <div className="Inicio_Contenedor_opcion_Menu" onClick={() => handleClickJson('opcion1')}>
+          <div className="Inicio_Contenedor_opcion_Menu" onClick={() => handleClickJson('gestion-del-cuidado')}>
             <div className='opcion_Menu_Contenedor'>
               <span className="opcion_Menu_Icono"> <IonIcon icon={heartOutline} /></span>
             </div>
             <div>
-              <h4>Programar una cita médica.</h4>
+              <h4>Gestión del cuidado.</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.!</p>
             </div>
           </div>
-          <div className="Inicio_Contenedor_opcion_Menu" onClick={() => handleClickJson('opcion2')}>
+          <div className="Inicio_Contenedor_opcion_Menu" onClick={() => handleClickJson('gestion-del-servicio')}>
             <div className='opcion_Menu_Contenedor'>
               <span className="opcion_Menu_Icono"> <IonIcon icon={leafOutline} /></span>
             </div>
             <div>
-              <h4>Acceder a tus resultados de exámenes anteriores.</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.!</p>
-            </div>
-          </div>
-          <div className="Inicio_Contenedor_opcion_Menu" onClick={() => handleClickJson('opcion3')}>
-            <div className='opcion_Menu_Contenedor'>
-              <span className="opcion_Menu_Icono"> <IonIcon icon={readerOutline} /></span>
-            </div>
-            <div>
-              <h4>Solicitar una receta médica o renovar una existente.</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.!</p>
-            </div>
-          </div>
-          <div className="Inicio_Contenedor_opcion_Menu" onClick={() => handleClickJson('opcion4')}>
-            <div className='opcion_Menu_Contenedor'>
-              <span className="opcion_Menu_Icono"> <IonIcon icon={readerOutline} /></span>
-            </div>
-            <div>
-              <h4>Solicitar una receta médica o renovar una existente.</h4>
+              <h4>Gestión del servicio.</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.!</p>
             </div>
           </div>
